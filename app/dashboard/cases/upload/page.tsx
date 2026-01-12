@@ -1,11 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, Plus, Calendar, CheckCircle2, ChevronDown, UnfoldVertical } from "lucide-react";
+import { ChevronLeft, Plus, Calendar, CheckCircle2, ChevronDown, UnfoldVertical, X } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { caseData } from "@/lib/caseStore";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function UploadDokumenPage() {
+import { Suspense } from "react";
+
+function UploadDokumenContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const docIndex = parseInt(searchParams.get("index") || "0");
@@ -159,5 +161,13 @@ export default function UploadDokumenPage() {
         )}
       </AnimatePresence>
     </div>
+  );
+}
+
+export default function UploadDokumenPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#F8F9FA]" />}>
+      <UploadDokumenContent />
+    </Suspense>
   );
 }
