@@ -34,7 +34,7 @@ export default function LoginOverlay({ onClose, onSuccess }: { onClose: () => vo
 
         <div className="flex flex-col items-center gap-[23px] mb-[65px] w-full">
              <div className="w-[120px] h-auto relative">
-                <img src="/assets/Logo AMFS.png" alt="AMFS Logo" className="w-full h-auto object-contain" />
+                <img src="/Assets/Logo AMFS.png" alt="AMFS Logo" className="w-full h-auto object-contain" />
              </div>
              <div className="text-[24px] font-bold mt-2">AMFS</div>
         </div>

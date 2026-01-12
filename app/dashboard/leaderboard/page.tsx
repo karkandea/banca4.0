@@ -23,7 +23,7 @@ export default function LeaderboardDetailPage() {
     <div className="w-full h-screen flex flex-col relative overflow-hidden bg-black">
       {/* Background Image Header - Full screen height */}
       <div className="absolute inset-0 z-0">
-         <img src="/assets/axa-tower.jpg" className="w-full h-full object-cover" />
+         <img src="/Assets/axa-tower.jpg" className="w-full h-full object-cover" />
          <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
@@ -42,7 +42,7 @@ export default function LeaderboardDetailPage() {
            {/* Rank 2 - Silver */}
            <div className="flex flex-col items-center gap-2">
               <div className="relative w-16 h-16">
-                 <img src="/assets/silver.png" className="w-full h-full object-contain" alt="Silver Medal" />
+                 <img src="/Assets/silver.png" className="w-full h-full object-contain" alt="Silver Medal" />
                  <span className="absolute top-[35%] left-1/2 -translate-x-1/2 text-white font-bold text-[10px]">COT</span>
               </div>
               <div className="bg-[#1F366A]/80 backdrop-blur-md p-3 rounded-2xl text-white text-center w-[110px] border border-white/20 shadow-lg">
@@ -60,7 +60,7 @@ export default function LeaderboardDetailPage() {
            {/* Rank 1 - Gold */}
            <div className="flex flex-col items-center gap-2 -mb-2 scale-110 z-10">
               <div className="relative w-20 h-20">
-                 <img src="/assets/Gold.png" className="w-full h-full object-contain" alt="Gold Medal" />
+                 <img src="/Assets/Gold.png" className="w-full h-full object-contain" alt="Gold Medal" />
                  <span className="absolute top-[35%] left-1/2 -translate-x-1/2 text-white font-bold text-[12px]">TOT</span>
               </div>
               <div className="bg-[#000030]/90 backdrop-blur-xl p-4 rounded-3xl text-white text-center w-[130px] border-2 border-yellow-400/40 shadow-2xl">
@@ -78,7 +78,7 @@ export default function LeaderboardDetailPage() {
            {/* Rank 3 - Bronze */}
            <div className="flex flex-col items-center gap-2">
               <div className="relative w-16 h-16">
-                 <img src="/assets/Bronze.png" className="w-full h-full object-contain" alt="Bronze Medal" />
+                 <img src="/Assets/Bronze.png" className="w-full h-full object-contain" alt="Bronze Medal" />
                  <span className="absolute top-[35%] left-1/2 -translate-x-1/2 text-white font-bold text-[10px]">MDRT</span>
               </div>
               <div className="bg-[#1F366A]/80 backdrop-blur-md p-3 rounded-2xl text-white text-center w-[110px] border border-white/20 shadow-lg">

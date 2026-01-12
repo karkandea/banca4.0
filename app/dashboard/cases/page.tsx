@@ -189,7 +189,7 @@ export default function CasesPage() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/60 z-[100] backdrop-blur-sm" />
             <motion.div initial={{ scale: 0.9, opacity: 0, y: 50 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.9, opacity: 0, y: 50 }} className="fixed inset-0 m-auto w-[360px] h-fit bg-white rounded-[40px] p-10 z-[101] flex flex-col items-center">
                <div className="w-full mb-6">
-                  <img src="/assets/suskespos.jpg" className="w-full h-auto object-contain rounded-2xl" alt="Success" />
+                  <img src="/Assets/suskespos.jpg" className="w-full h-auto object-contain rounded-2xl" alt="Success" />
                </div>
                <h2 className="text-[#1F366A] font-bold text-xl mb-8">Sukses mengirimkan file</h2>
                <button 

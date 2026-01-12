@@ -51,7 +51,7 @@ export default function DashboardPage() {
       >
          <div className="absolute inset-0">
              <img 
-               src="/assets/family.jpg" 
+               src="/Assets/family.jpg" 
                alt="Family" 
                className="w-full h-full object-cover"
              />
@@ -217,7 +217,7 @@ export default function DashboardPage() {
       {/* FAB - Tambah Leads */}
       <div className="fixed bottom-[100px] right-6 z-30 group">
           <button className="w-16 h-16 rounded-full shadow-2xl active:scale-90 transition-transform">
-             <img src="/assets/Icons/Tambah Leads.png" alt="Tambah Leads" className="w-full h-full object-contain" />
+             <img src="/Assets/Icons/Tambah Leads.png" alt="Tambah Leads" className="w-full h-full object-contain" />
           </button>
       </div>
 
@@ -238,7 +238,7 @@ export default function DashboardPage() {
                      className="w-[72px] h-[72px] bg-[#2F365F] rounded-[24px] rotate-45 flex items-center justify-center shadow-xl border-4 border-[#F8F9FA] active:scale-95 transition-transform"
                    >
                        <div className="-rotate-45">
-                           <img src="/assets/Icons/Menu.svg" className="w-7 h-7 brightness-0 invert" alt="Menu" />
+                           <img src="/Assets/Icons/Menu.svg" className="w-7 h-7 brightness-0 invert" alt="Menu" />
                        </div>
                    </button>
               </div>

@@ -19,7 +19,7 @@ export default function LandingPage() {
         {/* Background Asset */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/Loginpage.png" 
+            src="/Assets/Loginpage.png" 
             alt="Background" 
             className="w-full h-full object-cover"
           />

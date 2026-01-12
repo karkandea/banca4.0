@@ -123,7 +123,7 @@ export default function ProfilePage() {
               <div className="absolute top-[-25px] left-1/2 -translate-x-1/2">
                    <div className="w-[64px] h-[64px] bg-[#2F365F] rounded-[18px] rotate-45 flex items-center justify-center shadow-xl border-4 border-[#F8F9FA]">
                        <div className="-rotate-45 text-white">
-                           <img src="/assets/Icons/Menu.svg" className="w-7 h-7 brightness-0 invert" alt="Menu" />
+                           <img src="/Assets/Icons/Menu.svg" className="w-7 h-7 brightness-0 invert" alt="Menu" />
                        </div>
                    </div>
               </div>
