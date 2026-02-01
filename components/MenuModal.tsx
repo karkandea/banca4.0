@@ -9,12 +9,12 @@ interface MenuModalProps {
 }
 
 const menuItems = [
-  { label: "Kalender", icon: "/assets/Icons/solar_calendar-bold-duotone.svg" },
-  { label: "Komisi", icon: "/assets/Icons/solar_wallet-bold-duotone.svg" },
-  { label: "Lokasi", icon: "/assets/Icons/solar_streets-map-point-bold-duotone.svg" },
-  { label: "Lokasi User", icon: "/assets/Icons/ic_twotone-person-pin-circle.svg" },
-  { label: "Tele UW", icon: "/assets/Icons/solar_notes-bold-duotone.svg" },
-  { label: "After Sales", icon: "/assets/Icons/after sales.svg" },
+  { label: "Kalender", icon: "/Assets/Icons/solar_calendar-bold-duotone.svg" },
+  { label: "Komisi", icon: "/Assets/Icons/solar_wallet-bold-duotone.svg" },
+  { label: "Lokasi", icon: "/Assets/Icons/solar_streets-map-point-bold-duotone.svg" },
+  { label: "Lokasi User", icon: "/Assets/Icons/ic_twotone-person-pin-circle.svg" },
+  { label: "Tele UW", icon: "/Assets/Icons/solar_notes-bold-duotone.svg" },
+  { label: "After Sales", icon: "/Assets/Icons/after sales.svg" },
 ];
 
 export default function MenuModal({ onClose }: MenuModalProps) {
