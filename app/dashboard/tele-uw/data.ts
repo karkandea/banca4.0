@@ -1,0 +1,132 @@
+export const teleUwData = [
+  {
+    id: 1,
+    name: "Regina Putri",
+    status: "New", // For the list filter
+    statusLabel: "New", // For the badge
+    statusColor: "bg-[#0000FF] text-white",
+    cardBg: "bg-[#FFE8EC]", 
+    userId: "520-1256187",
+    date: "Senin, 21 April 2025",
+    isDateRed: true,
+    plan: "Mandiri Flexi Proteksi Plan 10",
+    
+    // Details
+    statusCall: "Uncontacted",
+    reasonStatus: "Busy Person",
+    detailReason: "Client requested a reschedule due to work conflict.",
+    scheduleDate: "21 April 2025, 10.00 WIB",
+    notes: "Follow up in the morning.",
+    corporateName: "Bank Mandiri",
+    gender: "Perempuan",
+    age: "25 Tahun",
+    phone: "081299998888",
+    email: "regina.putri@example.com",
+    address: "Jl. Sudirman No 1, Jakarta Selatan",
+    policyNumber: "520-1256187"
+  },
+  {
+    id: 2,
+    name: "Rizky Aditya",
+    status: "Progress",
+    statusLabel: "Progress",
+    statusColor: "bg-[#4CAF50] text-white",
+    cardBg: "bg-white",
+    userId: "510-1356187",
+    date: "Selasa, 22 April 2025",
+    isDateRed: false,
+    plan: "Mandiri Flexi Proteksi Plan 10",
+
+    // Details matching screenshot somewhat (screenshot has 'Close' status but name Rizky Aditya, I'll adapt)
+    statusCall: "Contacted",
+    reasonStatus: "Interested",
+    detailReason: "Asking about premium details.",
+    scheduleDate: "22 April 2025, 14.00 WIB",
+    notes: "Prepare premium simulation.",
+    corporateName: "Axa Mandiri",
+    gender: "Laki-laki",
+    age: "21 Tahun",
+    phone: "081234567890",
+    email: "rizky.aditya@hotmail.com",
+    address: "Jalan mardasah 1 RT000/RW000 Jakarta Pusat",
+    policyNumber: "510-1356187"
+  },
+  {
+    id: 3,
+    name: "Rizky Aditya", // Same name in screenshot list
+    status: "Close",
+    statusLabel: "Close",
+    statusColor: "bg-[#D32F2F] text-white",
+    cardBg: "bg-white",
+    userId: "510-1356187",
+    date: "Selasa, 22 April 2025",
+    isDateRed: false,
+    plan: "Mandiri Flexi Proteksi Plan 10",
+
+    // Details Exact Match to Screenshot
+    statusCall: "Uncontacted",
+    reasonStatus: "Busy Person",
+    detailReason: "I regret to inform you that I must cancel our appointment.",
+    scheduleDate: "24 April 2025, 15.00 WIB",
+    notes: "A busy person often juggles multiple tasks and responsibilities throughout the day. They thrive on organization and time management to keep everything in balance.",
+    corporateName: "Axa Mandiri",
+    gender: "Laki-laki",
+    age: "21 Tahun",
+    phone: "081234567890",
+    email: "Kevinarmada@hotmail.com",
+    address: "Jalan mardasah 1 RT000/RW000 Jakarta Pusat",
+    policyNumber: "520-7021386"
+  },
+  {
+    id: 4,
+    name: "Rizky Aditya",
+    status: "Hold",
+    statusLabel: "Hold",
+    statusColor: "bg-[#FFA000] text-white",
+    cardBg: "bg-white",
+    userId: "510-1356187",
+    date: "Selasa, 22 April 2025",
+    isDateRed: false,
+    plan: "Mandiri Flexi Proteksi Plan 10",
+
+     // Details
+    statusCall: "Uncontacted",
+    reasonStatus: "No Answer",
+    detailReason: "Called 3 times, no answer.",
+    scheduleDate: "25 April 2025, 09.00 WIB",
+    notes: "Try calling again later.",
+    corporateName: "Axa Mandiri",
+    gender: "Laki-laki",
+    age: "21 Tahun",
+    phone: "081234567890",
+    email: "rizky.aditya@hotmail.com",
+    address: "Jalan mardasah 1 RT000/RW000 Jakarta Pusat",
+    policyNumber: "510-1356187"
+  },
+  {
+    id: 5,
+    name: "Syarah",
+    status: "Sukses",
+    statusLabel: "Sukses",
+    statusColor: "bg-[#1F366A] text-white",
+    cardBg: "bg-white",
+    userId: "520-1256187",
+    date: "Senin, 21 April 2025",
+    isDateRed: false,
+    plan: "Mandiri Flexi Proteksi Plan 10",
+
+    // Details
+    statusCall: "Contacted",
+    reasonStatus: "Deal",
+    detailReason: "Policy issued.",
+    scheduleDate: "21 April 2025, 11.00 WIB",
+    notes: "Send welcome pack.",
+    corporateName: "Bank Syariah",
+    gender: "Perempuan",
+    age: "28 Tahun",
+    phone: "081355554444",
+    email: "syarah@example.com",
+    address: "Jl. Mega Kuningan, Jakarta",
+    policyNumber: "520-1256187"
+  },
+];

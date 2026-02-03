@@ -215,10 +215,12 @@ export default function DashboardPage() {
       </div>
 
       {/* FAB - Tambah Leads */}
-      <div className="fixed bottom-[100px] right-6 z-30 group">
-          <button className="w-16 h-16 rounded-full shadow-2xl active:scale-90 transition-transform">
-             <img src="/Assets/Icons/Tambah Leads.png" alt="Tambah Leads" className="w-full h-full object-contain" />
-          </button>
+      <div className="fixed bottom-[200px] left-0 right-0 mx-auto w-full max-w-[440px] z-50 pointer-events-none">
+          <div className="absolute right-6 pointer-events-auto group">
+            <button className="w-[80px] h-[80px] rounded-full shadow-2xl active:scale-90 transition-transform">
+               <img src="/Assets/Icons/Tambah Leads.png" alt="Tambah Leads" className="w-full h-full object-contain" />
+            </button>
+          </div>
       </div>
 
       {/* Bottom Navigation */}

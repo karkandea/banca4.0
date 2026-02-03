@@ -127,7 +127,7 @@ export default function DetailTransaksiPage() {
       </div>
 
       {/* Sticky Bottom Action */}
-      <div className="fixed bottom-0 left-0 right-0 p-5 bg-white border-t border-gray-100 z-30">
+      <div className="fixed bottom-0 left-0 right-0 mx-auto max-w-[440px] p-5 bg-white border-t border-gray-100 z-30">
         <button className="w-full bg-[#005A9E] text-white py-4 rounded-[16px] font-bold flex items-center justify-center gap-3 active:scale-[0.98] transition-all shadow-lg shadow-blue-900/10">
           <SquarePen className="w-5 h-5" />
           Tambah / Ganti Dokumen

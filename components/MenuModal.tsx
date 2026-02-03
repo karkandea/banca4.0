@@ -60,6 +60,9 @@ export default function MenuModal({ onClose }: MenuModalProps) {
                 if (item.label === "After Sales") {
                   router.push("/dashboard/transaksi");
                   onClose();
+                } else if (item.label === "Tele UW") {
+                  router.push("/dashboard/tele-uw");
+                  onClose();
                 }
               }}
             >

@@ -23,7 +23,7 @@ export default function LoginOverlay({ onClose, onSuccess }: { onClose: () => vo
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 100, opacity: 0 }}
-        className="pointer-events-auto relative w-[382px] h-[839px] bg-white rounded-[24px] shadow-2xl flex flex-col items-center pt-[185px] pb-[186px] overflow-hidden"
+        className="pointer-events-auto relative w-full max-w-[340px] h-auto max-h-[85vh] bg-white rounded-[24px] shadow-2xl flex flex-col items-center py-[40px] px-[24px] overflow-y-auto"
       >
         <button 
           onClick={onClose}
@@ -39,7 +39,7 @@ export default function LoginOverlay({ onClose, onSuccess }: { onClose: () => vo
              <div className="text-[24px] font-bold mt-2">AMFS</div>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col w-[318px]">
+        <form onSubmit={handleSubmit} className="flex flex-col w-full">
            <div className="h-[59px] rounded-[16px] bg-[#E9E9E9] mb-[24px] flex items-center px-6">
               <input 
                  className="bg-transparent w-full text-[14px] font-medium placeholder-[#323232] outline-none"
@@ -62,7 +62,7 @@ export default function LoginOverlay({ onClose, onSuccess }: { onClose: () => vo
            <button 
               type="submit"
               disabled={loading}
-              className="h-[66px] w-[318px] bg-[#00008F] text-white rounded-[16px] flex items-center justify-center gap-3 active:scale-95 transition-transform"
+              className="h-[66px] w-full bg-[#00008F] text-white rounded-[16px] flex items-center justify-center gap-3 active:scale-95 transition-transform"
            >
               {loading ? (
                   <span className="text-[16px] font-bold">Loading...</span>
