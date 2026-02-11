@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Banca 4.0",
   description: "Mobile prototype",
+  icons: {
+    icon: '/Assets/Logo AMFS.png',
+  },
 };
 
 export default function RootLayout({

@@ -8,32 +8,59 @@ export default function LandingPage() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const router = useRouter();
 
-  const handleLoginSuccess = () => {
+  const handleLoginSuccess = (path: string) => {
     setIsLoginOpen(false);
-    router.push("/dashboard");
+    router.push(path);
   };
 
   return (
-    <div className="relative w-full h-full min-h-screen bg-white overflow-y-auto pb-[100px]">
-      <div className="relative w-full h-[956px]">
-        {/* Background Asset */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/Assets/Loginpage.png" 
-            alt="Background" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+    <div className="relative w-full h-screen overflow-hidden bg-white font-inter">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/Assets/Loginpage.png" 
+          alt="Background" 
+          className="w-full h-full object-cover object-top"
+        />
+        {/* Gradient Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent top-1/2" />
       </div>
 
-      {/* "Login Now" Button - Fixed/Sticky at absolute bottom of viewport */}
-      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[440px] px-6 pb-8 pt-4 bg-gradient-to-t from-white/80 to-transparent z-40">
-        <button
-          onClick={() => setIsLoginOpen(true)}
-          className="w-full h-[49px] bg-[#00008F] text-white rounded-[12px] flex items-center justify-center shadow-lg active:scale-95 transition-transform"
-        >
-          <span className="font-bold text-[24px] leading-normal font-inter">Login Now</span>
-        </button>
+      {/* Main Content Container - Pinned to bottom */}
+      <div className="absolute bottom-0 left-0 w-full px-8 pb-10 z-10 flex flex-col justify-end h-full pointer-events-none">
+        <div className="pointer-events-auto w-full">
+            {/* Logo Section */}
+            <div className="flex items-start gap-3 mb-6">
+                <img src="/Assets/logo-login.png" alt="Logo" className="w-[50px] h-auto object-contain" />
+                <div className="flex flex-col leading-none pt-1">
+                    <span className="text-[#003D79] text-xl font-medium tracking-tight">perfect</span>
+                    <span className="text-[#F3AB00] text-xl font-bold tracking-tight">assistant</span>
+                    <div className="flex items-center gap-1 mt-1">
+                        <span className="text-[#003D79] text-[10px]">by</span>
+                        <img src="/Assets/Logo%20AMFS.png" alt="Mandiri" className="h-[12px] w-auto opacity-80" /> 
+                    </div>
+                </div>
+            </div>
+            
+            {/* Header Text */}
+            <h1 className="text-[#00008F] text-[34px] font-bold leading-[1.1] mb-8 tracking-tight">
+                Now Tracking Your <br />
+                Schedule <span className="text-[#F3AB00]">Easier</span>
+            </h1>
+
+            {/* Login Button */}
+            <button
+            onClick={() => setIsLoginOpen(true)}
+            className="w-full h-[54px] bg-black text-white rounded-full flex items-center justify-center font-bold text-[18px] shadow-xl active:scale-95 transition-transform mb-6 working-button"
+            >
+            Login Now
+            </button>
+
+            {/* Version Info */}
+            <div className="text-center w-full">
+                <span className="text-gray-500 text-[12px] font-medium tracking-wide">updates 11 Februari 2026</span>
+            </div>
+        </div>
       </div>
 
       <AnimatePresence>
