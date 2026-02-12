@@ -92,7 +92,7 @@ export default function LoginOverlay({ onClose, onSuccess }: { onClose: () => vo
                {/* Forgot Password */}
                <div className="text-center mt-2">
                  <button type="button" className="text-[#3C3C43] text-[13px] hover:underline">
-                   Don't remember your password?
+                   Don&apos;t remember your password?
                  </button>
                </div>
            </div>

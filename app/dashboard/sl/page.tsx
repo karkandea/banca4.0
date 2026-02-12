@@ -1,14 +1,16 @@
 "use client";
 import React, { useState } from "react";
-import { LogOut, ChevronDown, Filter } from "lucide-react";
+import { LogOut, ChevronDown, Filter, LayoutGrid } from "lucide-react";
 import { useRouter } from "next/navigation";
+import SLMenuModal from "@/components/SLMenuModal";
 
 export default function SalesLeaderDashboard() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState("Produksi");
+  const [isMenuModalOpen, setIsMenuModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen w-full bg-[#FAFAFA] pb-8 font-inter text-[#333]">
+    <div className="min-h-screen w-full bg-[#FAFAFA] pb-24 font-inter text-[#333]">
         {/* Header Section with Blue Gradient Background */}
         <div className="relative w-full overflow-hidden bg-gradient-to-br from-[#2F65F7] via-[#2F65F7] to-[#86A8FF] rounded-b-[40px] pt-12 pb-24 px-6 shadow-xl z-20">
             {/* Top Bar */}
@@ -262,7 +264,24 @@ export default function SalesLeaderDashboard() {
                 </div>
             </div>
 
+            {/* Spacer for Floating Button */}
+            <div className="h-16"></div>
+
         </div>
+
+    {/* Floating Menu Button */}
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40">
+        <button 
+            onClick={() => setIsMenuModalOpen(true)}
+            className="bg-white text-black px-6 py-3 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] flex items-center gap-3 active:scale-95 transition-transform"
+        >
+            <LayoutGrid className="w-5 h-5" />
+            <span className="font-bold text-sm">Menu</span>
+        </button>
+    </div>
+
+    {/* Menu Modal */}
+    <SLMenuModal isOpen={isMenuModalOpen} onClose={() => setIsMenuModalOpen(false)} />
     </div>
   );
 }

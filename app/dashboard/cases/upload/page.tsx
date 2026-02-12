@@ -118,7 +118,7 @@ function UploadDokumenContent() {
           <>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/60 z-[100]" />
             <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} className="fixed inset-0 m-auto w-[320px] h-fit bg-white rounded-[32px] p-8 z-[101] shadow-2xl flex flex-col items-center">
-               <h2 className="text-center font-bold text-[18px] text-gray-900 mb-4 leading-normal">Izinkan "Perfect Assistant" mengakses file di perangkat Anda?</h2>
+               <h2 className="text-center font-bold text-[18px] text-gray-900 mb-4 leading-normal">Izinkan &quot;Perfect Assistant&quot; mengakses file di perangkat Anda?</h2>
                <p className="text-center text-[13px] text-gray-500 mb-8 leading-relaxed">Kami memerlukan izin untuk mengakses file agar kamu bisa mengunggah dokumen pendukung dari perangkat ini. Izin ini hanya digunakan untuk kebutuhan upload.</p>
                <div className="flex flex-col w-full gap-2">
                   <button onClick={handleAllow} className="w-full py-4 text-blue-600 font-bold border-t border-gray-100">Izinkan</button>
